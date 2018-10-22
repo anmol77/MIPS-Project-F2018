@@ -7,3 +7,6 @@ main:                    # Start of the code section
     li $v0,  11          # system call code for printing character = 11
     li $a0, 64           # load address of the character '@' to be printed in $a0
     syscall
+    li $v0, 1            # system call code for printing integer value = 1
+    addi $a0, $a0, -64   # load address of the integer 0 to be printed in $a0
+    syscall
