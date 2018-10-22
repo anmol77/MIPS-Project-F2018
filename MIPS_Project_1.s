@@ -64,3 +64,6 @@ main:                    # Start of the code section
     li $v0,  11          # system call code for printing character = 11
     addi, $a0, $a0, 45   # loads address of character n to be printed in $a0
     syscall
+    li $v0,  11          # system call code for printing character = 11
+    addi, $a0, $a0, -1   # loads address of character m to be printed in $a0
+    syscall
