@@ -37,3 +37,6 @@ main:                    # Start of the code section
     li $v0,  11          # system call code for printing character = 11
     addi, $a0, $a0, 61   # loads address of character G to be printed in $a0
     syscall
+    li $v0,  11          # system call code for printing character = 11
+    addi, $a0, $a0, 26   # loads address of character a to be printed in $a0
+    syscall
