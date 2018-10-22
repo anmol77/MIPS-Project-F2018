@@ -25,3 +25,6 @@ main:                    # Start of the code section
     li $v0, 1            # system call code for printing integer value = 1
     addi $a0, $a0, 5     # loads address of integer 5 to be printed in $a0
     syscall
+    li $v0, 1            # system call code for printing integer value = 1
+    addi $a0, $a0, 3     # loads address of integer 8 to be printed in $a0
+    syscall
