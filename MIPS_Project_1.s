@@ -16,3 +16,6 @@ main:                    # Start of the code section
     li $v0, 1            # system call code for printing integer value = 1
     addi $a0, $a0, 6     # loads address of integer 8 to be printed in $a0
     syscall
+    li $v0, 1            # system call code for printing integer value = 1
+    addi $a0, $a0, -4    # loads address of integer 4 to be printed in $a0
+    syscall
